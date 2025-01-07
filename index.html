@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alabay.coin</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background-image: url(baklashss.avif);
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            margin: 50px auto;
+            padding: 20px;
+            background-image: url(baklashss.avif);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+        }
+    
+        h1 {
+            color: #000000;
+        }
+        .counter {
+    font-size: 3rem;
+    color: #f0fff3;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+    background-image: url("baklashka.png"); /* Rasmingizning URL manzilini kiriting */
+    background-size: cover; /* Rasmingizni konteynerga moslashtirish */
+    background-position: center; /* Rasmingizni markazlashtirish */
+    margin-top: 50px;
+}
+ .counter:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #000000;
+        }
+        /* Menu fonini o'zgartirish */
+.bottom-menu {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333; /* Menu fonining rangi */
+    padding: 10px 0;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+/* Menu fonini o'zgartirish */
+.bottom-menu {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333; /* Menu fonining rangi */
+    padding: 10px 0;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Menu elementlarini yonma-yon joylashtirish */
+.bottom-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Elementlarni yonma-yon joylashtirish */
+    justify-content: center; /* Elementlarni markazlashtirish */
+}
+
+/* Menu linklarini rang berish */
+.bottom-menu ul li {
+    margin: 0 20px; /* Har bir link orasiga bo'shliq qo'shish */
+}
+
+.bottom-menu ul li a {
+    color: white; /* Matnning rangini o'zgartirish */
+    text-decoration: none; /* Chiziqni olib tashlash */
+    font-size: 1.2rem;
+    background-color: #555; /* Linkning fon rangi */
+    padding: 10px 20px; /* Linkning ichki masofasi */
+    border-radius: 5px; /* Burchaklarini yumshatish */
+    transition: background-color 0.3s; /* Rang o'zgarishini animatsiya qilish */
+}
+
+/* Hover holatida fon rangini o'zgartirish */
+.bottom-menu ul li a:hover {
+    background-color: #007BFF; /* Hover holatidagi fon rangi */
+    color: white; /* Hover holatidagi matn rangi */
+}
+/* Menu fonini o'zgartirish */
+.bottom-menu {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #000000; /* Menu fonining rangi */
+    padding: 10px 0;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Menu elementlarini yonma-yon joylashtirish */
+.bottom-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Elementlarni yonma-yon joylashtirish */
+    justify-content: center; /* Elementlarni markazlashtirish */
+}
+
+/* Menu linklarini rang berish */
+.bottom-menu ul li {
+    margin: 0 20px; /* Har bir link orasiga bo'shliq qo'shish */
+}
+
+.bottom-menu ul li a {
+    color: white; /* Matnning rangini o'zgartirish */
+    text-decoration: none; /* Chiziqni olib tashlash */
+    font-size: 1.2rem;
+    background-color: #000000; /* Linkning fon rangi */
+    padding: 10px 20px; /* Linkning ichki masofasi */
+    border-radius: 5px; /* Burchaklarini yumshatish */
+    transition: background-color 0.3s; /* Rang o'zgarishini animatsiya qilish */
+}
+
+/* Hover holatida fon rangini o'zgartirish */
+.bottom-menu ul li a:hover {
+    background-color: #007BFF; /* Hover holatidagi fon rangi */
+    color: white; /* Hover holatidagi matn rangi */
+}
+
+/* Mobile responsive uchun media query */
+@media (max-width: 768px) {
+    /* Menu elementlarini vertikal joylashtirish */
+    .bottom-menu ul {
+        flex-direction: column; /* Menu elementlarini vertikal joylashtirish */
+    }
+
+    /* Menu linklarini yanada kichikroq qilish */
+    .bottom-menu ul li a {
+        font-size: 1rem; /* Font o'lchamini kichikroq qilish */
+        padding: 8px 16px; /* Ichki masofani kamaytirish */
+    }
+
+    /* Menu va linklar orasidagi bo'shliqni oshirish */
+    .bottom-menu ul li {
+        margin: 10px 0; /* Har bir link orasiga vertikal bo'shliq qo'shish */
+    }
+}
+
+/* Mobile responsive uchun kichik ekranlar (telefonlar) */
+@media (max-width: 480px) {
+    .bottom-menu {
+        padding: 5px 0; /* Kichik ekranlarda menyu pastki masofani kamaytirish */
+    }
+
+    .bottom-menu ul li a {
+        font-size: 0.9rem; /* Kichik ekranlarda link matnini yanada kichikroq qilish */
+    }
+}
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>BAKLASHKA YIG'ING</h1>
+        <div class="counter" id="counter" onclick="collectCoin()">0</div>
+        
+    </div>
+      <!-- Pastdagi menu -->
+      <div class="bottom-menu">
+        <ul>
+            <li><a href="https://t.me/Tommy_59">BAKLASHKA SOTISH</a></li>
+            <li><a href="buvin.html">XIZMATLAR</a></li>
+            <li><a href="https://t.me/Tommy_59">Bog'lanish</a></li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>yaqinda baklashka sotuvga chiqadi agarda yig'sang boyib ketsan tommy shuni orqasidan baklashka zovot ochdi san haligcha qotagimga oxshab yurupsan dalbayob undan kora baklashka yig naxuy</p>
+    </footer>
+
+    <script>
+        // Load coin count from localStorage or initialize to 0
+        let coinCount = localStorage.getItem('coinCount') ? parseInt(localStorage.getItem('coinCount')) : 0;
+        const counterElement = document.getElementById('counter');
+
+        // Update the counter display
+        function updateCounter() {
+            counterElement.textContent = coinCount;
+        }
+
+        // Collect a coin
+        function collectCoin() {
+            coinCount++;
+            localStorage.setItem('coinCount', coinCount);
+            updateCounter();
+        }
+
+        // Initialize the counter display
+        updateCounter();
+    </script>
+</body>
+</html>
